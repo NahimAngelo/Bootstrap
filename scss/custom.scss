@@ -1,0 +1,53 @@
+// Required
+@import "../node_modules/bootstrap/scss/functions";
+
+// Default variable overrides
+$success: rgb(168, 161, 161);
+
+// Required
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/buttons";
+
+// Bootstrap variable overrides
+.btn-outline-success {
+    color: $success;
+    border-color: $success;
+}
+
+// Optional Bootstrap components here
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+
+//New
+$facebook: #405D9D;
+$facebook-hv: #314879;
+$twitter: #42AEEC;
+$twitter-hv: #1799e4;
+
+.btn-facebook {
+    background: $facebook;
+    border: none;
+}
+
+.btn-facebook:hover, .btn-facebook:focus {
+    background: $facebook-hv;
+}
+
+.btn-twitter {
+    background: $twitter;
+    border: none;
+}
+
+.btn-twitter:hover, .btn-twitter:focus {
+    background: $twitter-hv;
+}
+
+.vertical-center {
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
+
+    display: flex;
+    align-items: center;
+}
