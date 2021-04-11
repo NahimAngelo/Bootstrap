@@ -1100,9 +1100,23 @@ progress {
 
 .vertical-center {
   min-height: 100%;
-  /* Fallback for browsers do NOT support vh unit */
   min-height: 100vh;
-  /* These two lines are counted as one :-)       */
   display: flex;
   align-items: center;
+}
+
+.vertical-center-70 {
+  max-height: 70%;
+  max-height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+.row {
+  text-align: -webkit-center;
+}
+
+.bg-gradient-green {
+  background: #007830;
+  background: linear-gradient(90deg, #007830 0%, #47df84 100%);
 }
