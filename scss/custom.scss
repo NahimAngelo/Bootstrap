@@ -3,6 +3,9 @@
 
 // Default variable overrides
 $success: rgb(168, 161, 161);
+$toast-border-color: white;
+$toast-background-color:#ffc107;
+$toast-color: black;
 
 // Required
 @import "../node_modules/bootstrap/scss/variables";
@@ -14,6 +17,32 @@ $success: rgb(168, 161, 161);
     color: $success;
     border-color: $success;
 }
+
+.container-fluid  {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.toast {
+    width: $toast-max-width;
+    max-width: 100%;
+    @include font-size($toast-font-size);
+    color: $toast-color;
+    pointer-events: auto;
+    background-color: $toast-background-color;
+    background-clip: padding-box;
+    border: $toast-border-width solid $toast-border-color;
+    box-shadow: $toast-box-shadow;
+    @include border-radius($toast-border-radius);
+  
+    &:not(.showing):not(.show) {
+      opacity: 0;
+    }
+  
+    &.hide {
+      display: none;
+    }
+  }
 
 // Optional Bootstrap components here
 @import "../node_modules/bootstrap/scss/root";

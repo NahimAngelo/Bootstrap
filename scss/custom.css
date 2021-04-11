@@ -502,6 +502,30 @@
   border-color: #a8a1a1;
 }
 
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.toast {
+  width: 350px;
+  max-width: 100%;
+  font-size: 0.875rem;
+  color: black;
+  pointer-events: auto;
+  background-color: #ffc107;
+  background-clip: padding-box;
+  border: 1px solid white;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+}
+.toast:not(.showing):not(.show) {
+  opacity: 0;
+}
+.toast.hide {
+  display: none;
+}
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
